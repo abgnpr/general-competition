@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cubes (1–50)</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <nav><a href="../">&larr; Back to Tools</a></nav>
+  <h1>Cubes</h1>
+  <p class="subtitle">Cubes of 1 to 50</p>
+
+  <input type="text" class="search-box" id="search" placeholder="Search a number (e.g. 12)..." autofocus>
+
+  <div class="grid" id="grid"></div>
+
+  <script>
+    const grid = document.getElementById('grid');
+    const search = document.getElementById('search');
+
+    function buildGrid(filter) {
+      grid.innerHTML = '';
+      for (let n = 1; n <= 50; n++) {
+        if (filter && n !== filter) continue;
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `<div class="number">${n}&sup3;</div><div class="result">${n * n * n}</div>`;
+        grid.appendChild(card);
+      }
+    }
+
+    buildGrid(null);
+
+    search.addEventListener('input', () => {
+      const val = parseInt(search.value, 10);
+      if (val >= 1 && val <= 50) {
+        buildGrid(val);
+      } else if (search.value === '') {
+        buildGrid(null);
+      }
+    });
+  </script>
+</body>
+</html>

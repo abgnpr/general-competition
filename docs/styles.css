@@ -1,0 +1,158 @@
+/* Shared styles for all study tools */
+:root {
+  --bg: #f8f9fa;
+  --card-bg: #ffffff;
+  --text: #212529;
+  --muted: #6c757d;
+  --accent: #0d6efd;
+  --accent-light: #e7f1ff;
+  --border: #dee2e6;
+  --radius: 8px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+  padding: 1rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+/* Navigation */
+nav {
+  margin-bottom: 1.5rem;
+}
+
+nav a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+nav a:hover { text-decoration: underline; }
+
+/* Search */
+.search-box {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+.search-box:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-light);
+}
+
+/* Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 0.5rem;
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.card .number {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.card .result {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Table-specific styles */
+.table-section {
+  margin-bottom: 1.5rem;
+}
+
+.table-section h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+}
+
+.table-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 0.3rem;
+}
+
+.table-row {
+  font-size: 0.85rem;
+  padding: 0.3rem 0.5rem;
+  background: var(--card-bg);
+  border-radius: 4px;
+}
+
+.table-row .eq { color: var(--muted); }
+.table-row .ans { font-weight: 600; }
+
+/* Landing page */
+.tool-list {
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+
+.tool-list a {
+  display: block;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  text-decoration: none;
+  color: var(--text);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.tool-list a:hover {
+  border-color: var(--accent);
+  box-shadow: 0 2px 8px rgba(13, 110, 253, 0.1);
+}
+
+.tool-list .tool-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: var(--accent);
+}
+
+.tool-list .tool-desc {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .grid { grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); }
+  .table-grid { grid-template-columns: repeat(auto-fill, minmax(80px, 1fr)); }
+}

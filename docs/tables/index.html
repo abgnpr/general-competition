@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplication Tables (1–30)</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <nav><a href="../">&larr; Back to Tools</a></nav>
+  <h1>Multiplication Tables</h1>
+  <p class="subtitle">Tables from 1 to 30</p>
+
+  <input type="text" class="search-box" id="search" placeholder="Search a number (e.g. 17)..." autofocus>
+
+  <div id="tables"></div>
+
+  <script>
+    const container = document.getElementById('tables');
+    const search = document.getElementById('search');
+
+    function buildTables(filter) {
+      container.innerHTML = '';
+      for (let n = 1; n <= 30; n++) {
+        if (filter && n !== filter) continue;
+        const section = document.createElement('div');
+        section.className = 'table-section';
+        section.innerHTML = `<h2>Table of ${n}</h2>`;
+        const grid = document.createElement('div');
+        grid.className = 'table-grid';
+        for (let i = 1; i <= 10; i++) {
+          const row = document.createElement('div');
+          row.className = 'table-row';
+          row.innerHTML = `<span class="eq">${n} &times; ${i} = </span><span class="ans">${n * i}</span>`;
+          grid.appendChild(row);
+        }
+        section.appendChild(grid);
+        container.appendChild(section);
+      }
+    }
+
+    buildTables(null);
+
+    search.addEventListener('input', () => {
+      const val = parseInt(search.value, 10);
+      if (val >= 1 && val <= 30) {
+        buildTables(val);
+      } else if (search.value === '') {
+        buildTables(null);
+      }
+    });
+  </script>
+</body>
+</html>
