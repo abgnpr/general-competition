@@ -1,3 +1,9 @@
+---
+title: Core Prep Philosophy
+parent: Strategy
+nav_order: 2
+---
+
 # Core Preparation Philosophy
 
 Build one strong base that serves all three exams:

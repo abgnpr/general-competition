@@ -1,3 +1,9 @@
+---
+title: RBI Grade B
+parent: Exams
+nav_order: 5
+---
+
 # RBI Grade B — Syllabus & Exam Pattern
 
 <!-- Phase I (Prelims): Quant, Reasoning, English, GA -->

@@ -1,0 +1,40 @@
+# Jekyll configuration for GitHub Pages
+title: Banking Exam Prep
+description: Personal knowledge base and study tools for Indian banking competitive exams
+
+# Use "just the docs" theme for clean navigation
+remote_theme: just-the-docs/just-the-docs@v0.10.1
+
+# Serve from root
+baseurl: ""
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-remote-theme
+
+# Exclude files that aren't part of the site
+exclude:
+  - CLAUDE.md
+  - convo-with-chatgpt.txt
+  - .gitignore
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - "*.txt"
+
+# Enable search
+search_enabled: true
+
+# Navigation structure — top-level sections
+nav_external_links: []
+
+# Color scheme
+color_scheme: light
+
+# Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"

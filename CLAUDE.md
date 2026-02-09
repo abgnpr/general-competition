@@ -12,15 +12,20 @@ Personal "second brain" for Indian banking exam preparation — IBPS PO/Clerk, S
 - **`plans/`** — Actionable study plans, schedules, and progress logs.
 - **`notes/`** — Subject-wise study notes organized by topic (quantitative-aptitude, reasoning, english, general-awareness, banking-awareness, finance-and-economics, computer-knowledge).
 - **`exams/`** — Exam-specific information (syllabus, pattern, cutoffs) per exam (ibps-po, ibps-clerk, sbi-po, sbi-clerk, rbi-grade-b, nabard, sebi).
-- **`docs/`** — GitHub Pages site with interactive HTML study tools (multiplication tables, squares, cubes). Deployed from `docs/` folder on `main` branch.
+- **`docs/`** — Interactive HTML study tools (multiplication tables, squares, cubes). Standalone HTML/CSS/JS.
 
 ## Working with Content
 
-- All notes and strategy documents are Markdown (`.md`).
+- All notes and strategy documents are Markdown (`.md`) with Jekyll front matter (title, parent, nav_order).
 - HTML tools in `docs/` are pure HTML/CSS/JS with no build step. `docs/styles.css` is the shared stylesheet.
-- When adding a new HTML tool: create a subfolder under `docs/`, add an `index.html`, link it from `docs/index.html`, and use the shared stylesheet.
-- When adding notes for a new topic: place them in the appropriate `notes/<subject>/` folder.
+- When adding a new HTML tool: create a subfolder under `docs/`, add an `index.html`, link it from `docs/index.md`, and use the shared stylesheet.
+- When adding notes for a new topic: place them in the appropriate `notes/<subject>/` folder with front matter (`title`, `parent: <Subject Title>`, `nav_order`).
+- When adding a new markdown file: always include Jekyll front matter with `title`, `parent` (matching the section's index.md title), and `nav_order`.
 
-## GitHub Pages
+## Jekyll & GitHub Pages
 
-The site is served from the `docs/` directory on the `main` branch. No build step required — just push and it's live.
+- The site uses the [Just the Docs](https://just-the-docs.com/) Jekyll theme (v0.10.1) via `remote_theme`.
+- GitHub Pages source: **`/` (root)** on the `main` branch (NOT `docs/`).
+- `_config.yml` at repo root controls theme, navigation, and excluded files.
+- All `.md` files with front matter become navigable pages with sidebar and search.
+- HTML tools in `docs/` are passed through as-is (no Jekyll layout wrapping).

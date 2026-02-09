@@ -1,3 +1,9 @@
+---
+title: RBI Grade B Core Layer
+parent: Strategy
+nav_order: 5
+---
+
 # RBI Grade B — Core Layer
 
 What RBI Grade B adds on top of the common subject base. This is what most PO-only aspirants lack — and your edge.

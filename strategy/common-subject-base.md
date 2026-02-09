@@ -1,3 +1,9 @@
+---
+title: Common Subject Base
+parent: Strategy
+nav_order: 4
+---
+
 # Common Subject Base (70-80% Shared Across Exams)
 
 The bulk of banking exam preparation overlaps. Master this base and you're competitive in most exams.

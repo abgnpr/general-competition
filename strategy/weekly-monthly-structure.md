@@ -1,3 +1,9 @@
+---
+title: Weekly & Monthly Structure
+parent: Strategy
+nav_order: 9
+---
+
 # Weekly & Monthly Structure
 
 ## Weekly Subject Rotation

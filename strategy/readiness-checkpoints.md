@@ -1,3 +1,9 @@
+---
+title: Readiness Checkpoints
+parent: Strategy
+nav_order: 11
+---
+
 # Readiness Checkpoints
 
 Self-assessment milestones to evaluate exam-readiness.

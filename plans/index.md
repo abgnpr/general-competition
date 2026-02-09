@@ -1,3 +1,9 @@
+---
+title: Plans
+has_children: true
+nav_order: 3
+---
+
 # Study Plans
 
 This folder holds actionable study plans, daily/weekly schedules, and progress logs.

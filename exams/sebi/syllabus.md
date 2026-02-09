@@ -1,3 +1,9 @@
+---
+title: SEBI
+parent: Exams
+nav_order: 7
+---
+
 # SEBI Grade A — Syllabus & Exam Pattern
 
 <!-- Phase I (Screening), Phase II (Mains) details -->

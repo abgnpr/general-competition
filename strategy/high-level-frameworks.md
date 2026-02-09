@@ -1,3 +1,9 @@
+---
+title: High-Level Frameworks
+parent: Strategy
+nav_order: 10
+---
+
 # High-Level Frameworks
 
 Mental models and decision frameworks for exam-day and preparation.

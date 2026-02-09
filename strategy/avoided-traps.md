@@ -1,3 +1,9 @@
+---
+title: Avoided Traps
+parent: Strategy
+nav_order: 12
+---
+
 # Avoided Traps
 
 Common pitfalls in banking exam preparation and how to steer clear of them.

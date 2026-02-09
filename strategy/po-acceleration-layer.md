@@ -1,3 +1,9 @@
+---
+title: PO Acceleration Layer
+parent: Strategy
+nav_order: 6
+---
+
 # PO Acceleration Layer
 
 Strategies specific to PO-level exams (IBPS PO, SBI PO) that layer on top of the common base.

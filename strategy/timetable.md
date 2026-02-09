@@ -1,3 +1,9 @@
+---
+title: Timetable
+parent: Strategy
+nav_order: 8
+---
+
 # Working Professional Timetable
 
 ## Constraints

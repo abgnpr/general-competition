@@ -1,3 +1,9 @@
+---
+title: Goals & Target Exams
+parent: Strategy
+nav_order: 1
+---
+
 # Goals & Target Exams
 
 ## Target Exams

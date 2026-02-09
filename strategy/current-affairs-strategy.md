@@ -1,3 +1,9 @@
+---
+title: Current Affairs Strategy
+parent: Strategy
+nav_order: 7
+---
+
 # Current Affairs Strategy
 
 The spine of all three exams. Prepare once, use thrice.
