@@ -25,6 +25,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - "*.txt"
+  - vendor/
 
 # Enable search
 search_enabled: true
