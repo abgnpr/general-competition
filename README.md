@@ -23,6 +23,11 @@ Personal knowledge base and strategy layer for Indian banking and insurance comp
 
 Start here → [plans/quant-starter-plan.md](plans/quant-starter-plan.md)
 
+### Other active plans
+
+- [plans/english-starter-plan.md](plans/english-starter-plan.md) — Pareto plan for English (RC + Cloze + Grammar basics).
+- [plans/descriptive-starter-plan.md](plans/descriptive-starter-plan.md) — Two-track descriptive writing (Track A: PO letter/essay; Track B: RBI/NABARD/SEBI Phase 2 theme-based).
+
 ## AI-Assisted Study Workflow
 
 This repo is the **persistent memory layer** for AI-assisted prep. Every new chat starts blank — but files here are readable by Claude, so all plans, progress, and insights live in files, not in conversation.
