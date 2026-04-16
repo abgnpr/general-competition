@@ -1,6 +1,7 @@
 # Jekyll configuration for GitHub Pages
 title: Banking Exam Prep
 description: Personal knowledge base and study tools for Indian banking competitive exams
+repository: abgnpr/general-competition
 
 # Use "just the docs" theme for clean navigation
 remote_theme: just-the-docs/just-the-docs@v0.10.1
