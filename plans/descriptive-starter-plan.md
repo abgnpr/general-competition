@@ -133,6 +133,28 @@ Every theme note is 1 page max, in [notes/descriptive-writing/themes/](../notes/
 - **Counter-view / limitations** — examiners love balance.
 - **1-line conclusion hook** — a reusable closing sentence.
 
+### How to actually get started (the first 4 weeks, low-friction)
+
+The biggest reason aspirants fail Phase 2 is they freeze on day one — trying to write a 500-word answer with no content base, no structural intuition, and no reference samples. **Do not start with writing.** Build the scaffolding first.
+
+**Week 1–2 — Read-first phase (do not write full answers)**
+
+- **Daily (15 min):** read 1 high-quality descriptive answer. Don't analyze. Let structure, tone, and data-density soak in.
+  - Sources: Oliveboard RBI Phase 2 answer keys (free PDFs), Anuj Jindal's YouTube descriptive walkthroughs, published RBI/NABARD toppers' answer sheets on Telegram groups, EdutapOfficial sample answers.
+- **Weekly (2 sessions):** build 1 theme note using the format in [themes/](../notes/descriptive-writing/themes/). No writing practice yet.
+- **Goal:** internalize the skeleton (intro → sub-headings → data → counter-view → way forward → conclusion) before producing one.
+
+**Week 3–4 — Skeleton-first phase**
+
+Still not writing full answers. Practice the *architecture* only.
+
+- Take a past-paper prompt (plenty free on Oliveboard / Edutap).
+- Write a **skeleton only**: H1 heading → 3–4 sub-headings → 1 data point under each → 3 bullets for Way Forward. ~5 min effort.
+- Paste to Claude: *"Review my skeleton — is the structure complete? What data is missing?"*
+- Iterate. Once skeletons feel easy, flesh one out into a 250-word mini-answer. That's your first full answer.
+
+**Why this sequence works:** writing is a stack — you can't write good prose without structure, can't structure without themes, can't theme without reading. Each phase removes one source of freeze.
+
 ### 12-week plan (parallel with objective prep)
 
 **Weeks 1–4 — Theme building phase**
@@ -155,6 +177,55 @@ Every theme note is 1 page max, in [notes/descriptive-writing/themes/](../notes/
 
 - Full Phase 2 paper simulation (3 questions × 500 words in 90 min).
 - Handwriting speed check.
+
+### Reading & Practice Materials
+
+**Short answer:** newspapers alone are NOT enough, and reading "everything" is a waste of time. You need a narrow, high-signal stack. The stack below is what actually moves the needle.
+
+#### Daily (30-45 min — this IS your prep)
+
+- **One editorial from The Hindu OR Indian Express OR Livemint.** Pick ONE. Rotating causes overload. Hindu is the RBI standard. Livemint is sharper for finance/SEBI angles.
+  - Read what's relevant to your themes. Skip film reviews, politics, international non-economic news.
+  - For each editorial, extract: 1 data point + 1 phrase + 1 counter-argument into the relevant theme file.
+- **RBI Governor speeches** on rbi.org.in — 1 per week. Gold for tone, data, and "way forward" language. These are literally written by future Phase 2 evaluators.
+
+#### Weekly (2-3 hours total)
+
+- **RBI Monthly Bulletin** — skim the "State of the Economy" article. Top data points for Phase 2.
+- **PIB releases** on economy, agriculture, schemes — 1–2 per week. Named scheme details live here.
+- **Niti Aayog reports** — 1 per month, read summary only (usually 4-6 pages). They define the "official" way-forward vocabulary.
+
+#### Pre-built digests (what to buy/subscribe — the time-savers)
+
+- **EdutapOfficial RBI Grade B ESI/F&M notes** — best compiled subject base for RBI. Worth the money.
+- **Anuj Jindal RBI Phase 2 course** — free YouTube content + paid course. His descriptive answer videos are the best free training.
+- **Oliveboard monthly current affairs PDF** — free. Banking + economy focused, not general GK.
+- **BankersAdda's monthly current affairs booklet** — free download. Redundant if you have Oliveboard; pick one.
+- **PIB Compilation from Insights on India** (free monthly) — official scheme updates without the politics.
+
+#### What NOT to read (waste of time for Phase 2)
+
+- General GK books (Lucent, Manorama Yearbook) — too broad, too shallow.
+- Full newspaper front-to-back — noise-to-signal ratio is bad.
+- Random Quora/YouTube "how I cracked RBI" videos — survivor bias, no framework.
+- Multiple editorial sources daily — overfits vocabulary, underfits depth.
+- Standard economics textbooks (Mankiw, Sanjiv Verma full read) — too dense, not exam-targeted.
+
+#### Practice materials (for the writing itself)
+
+- **Past papers** — RBI Grade B Phase 2 papers (last 5 years) are publicly available. Do these slowly during Weeks 5–12.
+- **Oliveboard mock Phase 2 papers** — paid but targeted. Best source for exam-pattern practice.
+- **Topper answer booklets** (Telegram/Reddit groups like r/RBIGradeB) — compare your answer structure against selected candidates'. Don't imitate prose, imitate skeleton.
+
+#### The signal-filter rule
+
+For every hour of reading, you should come out with AT LEAST one of:
+
+- A new data point added to a theme file, OR
+- A new phrase/transition added to reusable-paras, OR
+- A new recent example that strengthens an existing theme.
+
+If an hour of reading produces none of these, the source is too broad or too noisy. Drop it.
 
 ### English descriptive (RBI Paper 2, SEBI)
 
