@@ -6,7 +6,7 @@ nav_order: 1
 
 # Banking Exam Preparation — Second Brain
 
-Personal knowledge base and study tools for Indian banking competitive exams.
+Personal knowledge base and strategy layer for Indian banking and insurance competitive exams. Used as the **strategic resource for planning and critical notes** — not a problem bank.
 
 ## Target Exams
 
@@ -15,6 +15,50 @@ Personal knowledge base and study tools for Indian banking competitive exams.
 - RBI Grade B
 - NABARD Grade A/B
 - SEBI Grade A
+- LIC AAO and allied insurance exams
+
+## Current Focus
+
+**Quantitative Aptitude.** Plans and notes are currently optimized for building a strong, exam-agnostic quant base using the **Pareto (80/20) principle** — prioritize the 20% of topics that decide 80% of quant marks (Arithmetic core + DI), and treat everything else as secondary.
+
+Start here → [plans/quant-starter-plan.md](plans/quant-starter-plan.md)
+
+## AI-Assisted Study Workflow
+
+This repo is the **persistent memory layer** for AI-assisted prep. Every new chat starts blank — but files here are readable by Claude, so all plans, progress, and insights live in files, not in conversation.
+
+### Per-chapter loop
+
+Open a chapter with one line:
+
+```text
+Start chapter: <name>. Day 1 of the loop from plans/quant-starter-plan.md.
+```
+
+Claude reads the plan, runs the 6-day loop (concept map → worked examples → speed drill → mixed recall → traps + shortcuts → DI integration). You distill each session into the chapter note.
+
+Close a chapter:
+
+```text
+Finish chapter: <name>. Update checkpoint in quant-starter-plan.md and log progress.
+```
+
+### The three files that do 90% of the work
+
+1. **`notes/<subject>/<chapter>.md`** — distilled concept map, formulas that matter, traps, shortcuts, revision triggers. Max 1–2 pages per chapter.
+2. **[`plans/progress-log.md`](plans/progress-log.md)** — one line per session. Claude reads this to resume context instantly.
+3. **[`notes/quantitative-aptitude/mistake-log.md`](notes/quantitative-aptitude/mistake-log.md)** — cross-chapter recurring error patterns. Gold for revision week.
+
+### Minimum ritual per session
+
+```text
+1. "Check progress-log and quant-starter-plan. What's next?"
+2. Claude says the next step.
+3. Do the work.
+4. "Log today: <one line>. Update chapter note with <insight>."
+```
+
+No re-context, no re-planning. Files do the remembering.
 
 ## Structure
 

@@ -4,7 +4,17 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Purpose
 
-Personal "second brain" for Indian banking exam preparation — IBPS PO/Clerk, SBI PO/Clerk, RBI Grade B, NABARD, SEBI, and related exams. This is a content-and-tools repo, not a software project.
+Personal "second brain" for Indian banking and insurance exam preparation — IBPS PO/Clerk, SBI PO/Clerk, RBI Grade B, NABARD, SEBI, LIC AAO, and related exams. This is a content-and-tools repo, not a software project.
+
+**Current focus:** Quantitative Aptitude. Treat this repo as the strategic planning and critical-notes layer — not a problem bank. Use it to decide *what* to study, track Pareto-weighted priorities, and preserve hard-won insights (tricks, traps, formulas that matter). Bulk drilling happens outside; distilled learning lands here.
+
+## Working Style for Claude
+
+- Apply the **Pareto (80/20) principle** when shaping plans: prioritize the 20% of topics/sub-topics that yield 80% of marks across target exams. Flag low-yield areas explicitly as deprioritized.
+- Before suggesting a chapter or plan, check `strategy/` and `plans/` for existing direction. Build on it; don't duplicate.
+- When building quant study plans, sequence by **compounding leverage** (topics that unlock other topics first — e.g., Percentages before SI/CI, Profit & Loss, DI).
+- Prefer AI-assisted study loops: concept explanation → worked examples → spaced recall prompts → mistake log → targeted re-practice.
+- Capture only **non-obvious** insights in notes — shortcuts, common traps, formula derivations. Skip generic textbook content.
 
 ## Repository Structure
 
