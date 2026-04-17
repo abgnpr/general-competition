@@ -18,8 +18,8 @@ Personal "second brain" for Indian banking and insurance exam preparation — IB
 
 ## Repository Structure
 
-- **`strategy/`** — The backbone. Contains the strategic preparation framework: goals, exam differences, prep philosophy, common subject base, exam-specific layers, timetable, readiness checkpoints. Always read relevant strategy files before making changes to understand context.
-- **`plans/`** — Actionable study plans, schedules, and progress logs.
+- **`strategy/`** — The backbone. Contains the strategic preparation framework: goals, exam differences, prep philosophy, common subject base, exam-specific layers (`layer-*.md`), readiness checkpoints. Evergreen principles, not schedules. Always read relevant strategy files before making changes to understand context.
+- **`plans/`** — Actionable schedules: timetable, weekly/monthly structure, subject-wise starter plans, progress logs.
 - **`notes/`** — Subject-wise study notes organized by topic (quantitative-aptitude, reasoning, english, general-awareness, banking-awareness, finance-and-economics, computer-knowledge).
 - **`exams/`** — Exam-specific information (syllabus, pattern, cutoffs) per exam (ibps-po, ibps-clerk, sbi-po, sbi-clerk, rbi-grade-b, nabard, sebi).
 - **`docs/`** — Interactive HTML study tools (multiplication tables, squares, cubes). Standalone HTML/CSS/JS.

@@ -1,3 +1,9 @@
+---
+title: Books & Resources
+parent: Plans
+nav_order: 8
+---
+
 # Books & Resources (Lean List)
 
 One subject, one book, one current affairs source. Anything extra must replace, not add.

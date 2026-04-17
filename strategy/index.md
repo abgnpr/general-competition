@@ -6,4 +6,4 @@ nav_order: 2
 
 # Strategy
 
-Preparation framework — goals, philosophy, timetable, readiness checkpoints.
+Preparation framework — goals, philosophy, exam layers, readiness checkpoints.

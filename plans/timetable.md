@@ -1,7 +1,7 @@
 ---
 title: Timetable
-parent: Strategy
-nav_order: 8
+parent: Plans
+nav_order: 1
 ---
 
 # Working Professional Timetable

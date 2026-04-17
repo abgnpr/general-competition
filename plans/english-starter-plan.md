@@ -1,7 +1,7 @@
 ---
 title: English Starter Plan (Pareto)
 parent: Plans
-nav_order: 5
+nav_order: 6
 ---
 
 # English Language — Starter Plan (Pareto 80/20)

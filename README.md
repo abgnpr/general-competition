@@ -69,8 +69,8 @@ No re-context, no re-planning. Files do the remembering.
 
 | Folder | What's Inside |
 |--------|--------------|
-| `strategy/` | Preparation framework — goals, philosophy, timetable, readiness checkpoints |
-| `plans/` | Study plans, schedules, progress tracking |
+| `strategy/` | Preparation framework — goals, philosophy, exam layers, readiness checkpoints |
+| `plans/` | Study plans, timetables, weekly structure, progress tracking |
 | `notes/` | Subject-wise notes (Quant, Reasoning, English, GA, Banking, Finance, Computer) |
 | `exams/` | Exam-specific syllabus, pattern, and cutoff info |
 | `docs/` | Interactive HTML study tools (GitHub Pages) |

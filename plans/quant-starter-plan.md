@@ -1,7 +1,7 @@
 ---
 title: Quant Starter Plan (Pareto)
 parent: Plans
-nav_order: 2
+nav_order: 5
 ---
 
 # Quantitative Aptitude — Starter Plan (Pareto 80/20)

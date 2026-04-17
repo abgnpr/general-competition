@@ -1,7 +1,7 @@
 ---
 title: Descriptive Writing Starter Plan
 parent: Plans
-nav_order: 4
+nav_order: 7
 ---
 
 # Descriptive Writing — Starter Plan (Two Tracks)

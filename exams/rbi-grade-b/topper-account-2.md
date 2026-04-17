@@ -1,5 +1,5 @@
 ---
-title: "Topper Strategy 2 — Amit Punia (2019)"
+title: "Topper Account — Amit Punia (2019)"
 parent: RBI Grade B
 nav_order: 3
 ---

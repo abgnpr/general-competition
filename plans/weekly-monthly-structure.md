@@ -1,7 +1,7 @@
 ---
 title: Weekly & Monthly Structure
-parent: Strategy
-nav_order: 9
+parent: Plans
+nav_order: 2
 ---
 
 # Weekly & Monthly Structure
