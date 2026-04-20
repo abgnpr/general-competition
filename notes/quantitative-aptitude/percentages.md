@@ -20,6 +20,76 @@ Everything else in this chapter is a corollary.
 
 The single highest-ROI investment in quant. These numbers appear inside P&L, SI/CI, DI, Ratios — every Tier 1 chapter.
 
+**Read this table three ways** — fraction form, mixed % (exact), decimal % (approx). The mixed form exposes the pattern; the decimal form is what appears in options. Train to flip between all three instantly.
+
+### Core table — $\frac{1}{n}$ (anchor row)
+
+| Fraction | Mixed % (exact) | Decimal % |
+|----------|-----------------|-----------|
+| $\frac{1}{2}$ | $50\%$ | 50 |
+| $\frac{1}{3}$ | $33\tfrac{1}{3}\%$ | 33.33 |
+| $\frac{1}{4}$ | $25\%$ | 25 |
+| $\frac{1}{5}$ | $20\%$ | 20 |
+| $\frac{1}{6}$ | $16\tfrac{2}{3}\%$ | 16.67 |
+| $\frac{1}{7}$ | $14\tfrac{2}{7}\%$ | 14.29 |
+| $\frac{1}{8}$ | $12\tfrac{1}{2}\%$ | 12.5 |
+| $\frac{1}{9}$ | $11\tfrac{1}{9}\%$ | 11.11 |
+| $\frac{1}{10}$ | $10\%$ | 10 |
+| $\frac{1}{11}$ | $9\tfrac{1}{11}\%$ | 9.09 |
+| $\frac{1}{12}$ | $8\tfrac{1}{3}\%$ | 8.33 |
+| $\frac{1}{13}$ | $7\tfrac{9}{13}\%$ | 7.69 |
+| $\frac{1}{14}$ | $7\tfrac{1}{7}\%$ | 7.14 |
+| $\frac{1}{15}$ | $6\tfrac{2}{3}\%$ | 6.67 |
+| $\frac{1}{16}$ | $6\tfrac{1}{4}\%$ | 6.25 |
+| $\frac{1}{20}$ | $5\%$ | 5 |
+| $\frac{1}{25}$ | $4\%$ | 4 |
+| $\frac{1}{40}$ | $2\tfrac{1}{2}\%$ | 2.5 |
+| $\frac{1}{50}$ | $2\%$ | 2 |
+
+**Pattern to notice** (makes memorization free):
+
+- Denominator containing **3**: mixed part has `/3` → 1/3 = 33⅓, 1/6 = 16⅔, 1/12 = 8⅓, 1/15 = 6⅔
+- Denominator containing **7**: mixed part has `/7` → 1/7 = 14 2/7, 1/14 = 7 1/7
+- Denominator containing **8**: mixed part has `/2` → 1/8 = 12½, 1/16 = 6¼
+- Denominator containing **9** or **11**: mixed part has `/9` or `/11` → 1/9 = 11 1/9, 1/11 = 9 1/11 (self-referential — the denominator echoes)
+
+### Multiples — $\frac{k}{n}$ (build from $\frac{1}{n}$)
+
+Each $\frac{k}{n}\%$ is just $k \times (\frac{1}{n}\%)$. The mixed form stays clean; memorize the most-tested.
+
+| Fraction | Mixed % | Decimal % |
+|----------|---------|-----------|
+| $\frac{2}{3}$ | $66\tfrac{2}{3}\%$ | 66.67 |
+| $\frac{3}{4}$ | $75\%$ | 75 |
+| $\frac{2}{5}$ | $40\%$ | 40 |
+| $\frac{3}{5}$ | $60\%$ | 60 |
+| $\frac{4}{5}$ | $80\%$ | 80 |
+| $\frac{5}{6}$ | $83\tfrac{1}{3}\%$ | 83.33 |
+| $\frac{2}{7}$ | $28\tfrac{4}{7}\%$ | 28.57 |
+| $\frac{3}{7}$ | $42\tfrac{6}{7}\%$ | 42.86 |
+| $\frac{4}{7}$ | $57\tfrac{1}{7}\%$ | 57.14 |
+| $\frac{5}{7}$ | $71\tfrac{3}{7}\%$ | 71.43 |
+| $\frac{6}{7}$ | $85\tfrac{5}{7}\%$ | 85.71 |
+| $\frac{3}{8}$ | $37\tfrac{1}{2}\%$ | 37.5 |
+| $\frac{5}{8}$ | $62\tfrac{1}{2}\%$ | 62.5 |
+| $\frac{7}{8}$ | $87\tfrac{1}{2}\%$ | 87.5 |
+| $\frac{2}{9}$ | $22\tfrac{2}{9}\%$ | 22.22 |
+| $\frac{4}{9}$ | $44\tfrac{4}{9}\%$ | 44.44 |
+| $\frac{5}{9}$ | $55\tfrac{5}{9}\%$ | 55.56 |
+| $\frac{7}{9}$ | $77\tfrac{7}{9}\%$ | 77.78 |
+| $\frac{8}{9}$ | $88\tfrac{8}{9}\%$ | 88.89 |
+| $\frac{2}{11}$ | $18\tfrac{2}{11}\%$ | 18.18 |
+| $\frac{3}{11}$ | $27\tfrac{3}{11}\%$ | 27.27 |
+| $\frac{4}{11}$ | $36\tfrac{4}{11}\%$ | 36.36 |
+| $\frac{5}{11}$ | $45\tfrac{5}{11}\%$ | 45.45 |
+| $\frac{5}{12}$ | $41\tfrac{2}{3}\%$ | 41.67 |
+| $\frac{7}{12}$ | $58\tfrac{1}{3}\%$ | 58.33 |
+| $\frac{11}{12}$ | $91\tfrac{2}{3}\%$ | 91.67 |
+
+### Matrix view — quick visual lookup
+
+Same data, compact grid. Use this for rapid cross-row glancing; the lists above are for memorization with patterns.
+
 | 1/n | % | 2/n | % | 3/n | % | 4/n | % |
 |-----|---|-----|---|-----|---|-----|---|
 | 1/2 | 50 | | | | | | |
@@ -38,7 +108,12 @@ The single highest-ROI investment in quant. These numbers appear inside P&L, SI/
 | 1/20 | 5 | | | | | | |
 | 1/25 | 4 | | | | | | |
 
-**Usage:** when you see 37.5% in a problem, stop. That is `3/8`. Convert and the problem gets easier.
+**Usage under exam conditions:**
+
+1. See **37.5%** → think `3/8` → multiply by N/8 × 3, not N × 0.375.
+2. See **16.67%** → think `1/6` → divide by 6.
+3. See **44.44%** → think `4/9` → multiply by 4, divide by 9.
+4. If the question gives mixed form (e.g. **14 2/7 %**), the fraction is `1/7` — often a signal that the answer will be a clean multiple of 7.
 
 ## The Full Formula Set
 
