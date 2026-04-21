@@ -11,7 +11,7 @@ One line per study session. Date in `YYYY-MM-DD` format. Keep entries terse — 
 ## Format
 
 ```
-YYYY-MM-DD | <subject>/<chapter> | Day <n> | <duration> | <status> | <note>
+YYYY-MM-DD | <subject>/<chapter> | Stage <n> | <duration> | <status> | <note>
 ```
 
 - **status**: `done` | `partial` | `stuck` | `revision`
@@ -21,13 +21,11 @@ YYYY-MM-DD | <subject>/<chapter> | Day <n> | <duration> | <status> | <note>
 
 Quantitative Aptitude → Tier 1 chapters per [quant-starter-plan.md](quant-starter-plan.md).
 
-Active chapter: **Percentages** (not started)
+Active chapter: **Percentages** (Stage 2 in progress)
 
 ## Entries
 
 <!-- Newest at top -->
 
-<!-- Example entries (delete once real ones exist):
-2026-04-18 | quant/percentages | Day 1 | 60min | done | concept map written; successive % change still fuzzy
-2026-04-19 | quant/percentages | Day 2 | 75min | partial | 8/10 solved, base-change traps recurring
--->
+2026-04-21 | quant/percentages | Stage 2 | — | in_progress | PYQ drill + Stage-7 self-test
+2026-04-20 | quant/percentages | Stage 1 | — | done | full notes built: mental model, fraction tables, formulas, traps, MCQ tactics

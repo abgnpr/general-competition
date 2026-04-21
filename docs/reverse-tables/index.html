@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reverse Table Flashcards (11–30)</title>
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    .picker {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-bottom: 2rem;
+    }
+
+    .picker button {
+      padding: 0.4rem 0.8rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--card-bg);
+      color: var(--text);
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s, color 0.15s;
+    }
+
+    .picker button:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .picker button.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+      font-weight: 600;
+    }
+
+    #flashcard-area {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    #flashcard-area.visible { display: flex; }
+
+    .fc-label {
+      font-size: 0.85rem;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .fc-card {
+      background: var(--card-bg);
+      border: 2px solid var(--border);
+      border-radius: 16px;
+      width: min(340px, 100%);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      transition: border-color 0.2s;
+    }
+
+    .fc-card.revealed { border-color: var(--accent); }
+
+    .fc-product {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1;
+      margin-bottom: 0.25rem;
+    }
+
+    .fc-hint {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .fc-answer {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--accent);
+      min-height: 2rem;
+      visibility: hidden;
+    }
+
+    .fc-answer.visible { visibility: visible; }
+
+    .fc-equation {
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-top: 0.4rem;
+      min-height: 1.2rem;
+      visibility: hidden;
+    }
+
+    .fc-equation.visible { visibility: visible; }
+
+    .btn-row {
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .btn {
+      padding: 0.65rem 1.5rem;
+      border: none;
+      border-radius: var(--radius);
+      font-size: 1rem;
+      cursor: pointer;
+      font-weight: 500;
+      transition: opacity 0.15s;
+    }
+
+    .btn:hover { opacity: 0.85; }
+
+    .btn-reveal {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .btn-next {
+      background: var(--accent-light);
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      display: none;
+    }
+
+    .btn-next.visible { display: inline-block; }
+
+    .fc-counter {
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <nav><a href="../">&larr; Back to Tools</a></nav>
+  <h1>Reverse Table Flashcards</h1>
+  <p class="subtitle">See the product — recall the factor</p>
+
+  <p class="fc-label" style="margin-bottom:0.5rem;">Pick a table</p>
+  <div class="picker" id="picker"></div>
+
+  <div id="flashcard-area">
+    <div class="fc-label" id="fc-table-label"></div>
+    <div class="fc-card" id="fc-card">
+      <div class="fc-product" id="fc-product"></div>
+      <div class="fc-hint" id="fc-hint"></div>
+      <div class="fc-answer" id="fc-answer"></div>
+      <div class="fc-equation" id="fc-equation"></div>
+    </div>
+    <div class="btn-row">
+      <button class="btn btn-reveal" id="btn-reveal">Reveal</button>
+      <button class="btn btn-next" id="btn-next">Next →</button>
+    </div>
+    <div class="fc-counter" id="fc-counter"></div>
+  </div>
+
+  <script>
+    const N = 30, MIN = 11;
+    let table = null;
+    let deck = [];
+    let idx = 0;
+    let revealed = false;
+    let seen = 0;
+
+    // Build picker
+    const picker = document.getElementById('picker');
+    for (let t = MIN; t <= N; t++) {
+      const btn = document.createElement('button');
+      btn.textContent = t;
+      btn.addEventListener('click', () => startTable(t, btn));
+      picker.appendChild(btn);
+    }
+
+    function shuffle(arr) {
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    }
+
+    function makeDeck(t) {
+      // factors 1–10 for each table
+      return shuffle(Array.from({length: 10}, (_, i) => i + 1));
+    }
+
+    function startTable(t, btn) {
+      table = t;
+      deck = makeDeck(t);
+      idx = 0;
+      seen = 0;
+
+      document.querySelectorAll('.picker button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      document.getElementById('flashcard-area').classList.add('visible');
+      document.getElementById('fc-table-label').textContent = `Table of ${t}`;
+
+      showCard();
+    }
+
+    function showCard() {
+      if (idx >= deck.length) {
+        // reshuffle and loop
+        deck = makeDeck(table);
+        idx = 0;
+      }
+
+      const factor = deck[idx];
+      const product = table * factor;
+      revealed = false;
+
+      document.getElementById('fc-product').textContent = product;
+      document.getElementById('fc-hint').textContent = `${table} × ? = ${product}`;
+
+      const ansEl = document.getElementById('fc-answer');
+      const eqEl = document.getElementById('fc-equation');
+      ansEl.textContent = factor;
+      eqEl.textContent = `${table} × ${factor} = ${product}`;
+      ansEl.classList.remove('visible');
+      eqEl.classList.remove('visible');
+
+      document.getElementById('fc-card').classList.remove('revealed');
+      document.getElementById('btn-reveal').style.display = 'inline-block';
+      document.getElementById('btn-next').classList.remove('visible');
+
+      seen++;
+      document.getElementById('fc-counter').textContent = `Card ${seen}`;
+    }
+
+    document.getElementById('btn-reveal').addEventListener('click', () => {
+      if (revealed) return;
+      revealed = true;
+
+      document.getElementById('fc-answer').classList.add('visible');
+      document.getElementById('fc-equation').classList.add('visible');
+      document.getElementById('fc-card').classList.add('revealed');
+      document.getElementById('btn-reveal').style.display = 'none';
+      document.getElementById('btn-next').classList.add('visible');
+    });
+
+    document.getElementById('btn-next').addEventListener('click', () => {
+      idx++;
+      showCard();
+    });
+
+    // keyboard: space = reveal / next
+    document.addEventListener('keydown', e => {
+      if (e.code === 'Space') {
+        e.preventDefault();
+        if (!revealed) {
+          document.getElementById('btn-reveal').click();
+        } else {
+          document.getElementById('btn-next').click();
+        }
+      }
+    });
+  </script>
+</body>
+</html>

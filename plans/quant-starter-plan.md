@@ -60,36 +60,36 @@ Percentages + Ratios + Averages are **load-bearing**. Every arithmetic chapter a
 
 ## The AI-Assisted Study Loop (per chapter)
 
-Use this loop with Claude (or any LLM) for every Tier 1 chapter. Roughly 5–7 days per chapter for Tier 1.
+Use this loop with Claude (or any LLM) for every Tier 1 chapter. Roughly 5–7 stages per chapter for Tier 1.
 
-### Day 1 — Concept map (60–90 min)
+### Stage 1 — Concept map (60–90 min)
 
 - Ask Claude: *"Explain [chapter] from zero — core idea, the 3–5 formulas that actually matter, and the mental model for attacking problems in under 45 seconds."*
 - Write the concept map in your own words in `notes/quantitative-aptitude/<chapter>.md` (front matter + 1 page max).
 - Do not start problems yet.
 
-### Day 2 — Worked examples (90 min)
+### Stage 2 — Worked examples (90 min)
 
 - Pick 10 problems of increasing difficulty from RS Aggarwal / Arun Sharma / any one source.
 - Solve untimed. For each, after solving, ask Claude: *"Is there a faster approach? What's the trap in this problem?"*
 - Log the faster approach, not the long one.
 
-### Day 3 — Speed drill (60 min)
+### Stage 3 — Speed drill (60 min)
 
 - 20 problems, timed (45 sec each). Pen-paper only.
 - After: feed wrong/slow problems to Claude → *"Why did I get this wrong/slow? What pattern should I have recognized?"*
 
-### Day 4 — Mixed recall (45 min)
+### Stage 4 — Mixed recall (45 min)
 
 - Ask Claude to quiz you with 10 mixed problems from the chapter (varied difficulty). No solutions until you attempt.
 - Focus: pattern recognition, not novelty.
 
-### Day 5 — Mistake log + trap sheet (30 min)
+### Stage 5 — Mistake log + trap sheet (30 min)
 
 - Add a "Common Traps" section to your chapter note. Max 5 bullets.
 - Add 3–5 shortcuts you discovered in `notes/quantitative-aptitude/<chapter>-shortcuts.md`.
 
-### Day 6–7 — DI integration
+### Stage 6–7 — DI integration
 
 - Solve 3–5 DI sets that lean on this chapter (e.g., after Percentages, solve Pie Charts).
 - The test of mastery: can you compute percentages mentally inside DI, without a detour?

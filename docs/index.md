@@ -11,3 +11,4 @@ Quick-reference tools for banking exam preparation.
 - [Multiplication Tables](tables/) — Tables from 1 to 30
 - [Squares](squares/) — Squares of 1 to 100
 - [Cubes](cubes/) — Cubes of 1 to 50
+- [Reverse Table Flashcards](reverse-tables/) — See the product, recall the factor (tables 11–30)

@@ -8,7 +8,7 @@ nav_order: 10
 
 **Tier 1 · Priority 1 · The master key.** Unlocks P&L, SI/CI, Ratios, and most DI.
 
-Status: Day 1 complete (2026-04-20)
+Status: Stage 1 complete (2026-04-20)
 
 ## The ONE Mental Model
 
@@ -305,7 +305,7 @@ Solve untimed first, then re-time at 45 s each. Each maps to a recurring exam pa
 8. **(IBPS Clerk calculation)** 62.5% of 480 = ?
    *5/8 × 480 = 300. (Fraction table; never decimal.)*
 
-## Day-7 Self-Test (if you can't do these in 45s each, revisit)
+## Stage-7 Self-Test (if you can't do these in 45s each, revisit)
 
 1. Convert instantly: 37.5%, 62.5%, 44.44%, 41.67%, 28.57% → fractions.
 2. A is 60% more than B. B is what % less than A? *(37.5%)*
