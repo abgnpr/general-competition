@@ -237,12 +237,29 @@ Base change is just **flipping the fraction**.
 |---------|--------|
 | "Income up a%, expenditure up b%, savings change?" | Write savings = income − expenditure, apply multipliers to each, not to savings. |
 | Population/bacteria/price for n years | `Final = Initial × (1 + r/100)ⁿ`. Same form as CI. |
+| Population n years hence AND n years ago (same rate r%) | Forward: `P × (1 + r/100)ⁿ`. Backward: `P / (1 + r/100)ⁿ` = `P × (100/(100+r))ⁿ`. For decrease, swap signs. Trap: don't subtract n×r%. |
 | "Pass marks = 40%, scored X, failed by Y" | Pass = 0.4 × total. Total = (X + Y) / 0.4. |
 | "Salary up 20%, then down 10%" | Chain: ×1.2 × 0.9 = ×1.08 → +8%. |
 | "A spends 60%, saves ₹X" | Savings = 40% of income → income = X / 0.4. |
 | "Price reduced by r%, how much more can buy with same money?" | New quantity factor = 1/(1 − r/100). Answer = `r/(100−r) × 100`% more. Base-change in disguise. |
 | Exam marks with negative marking | Convert to multiplier on attempts: `net = correct − (1/4) × wrong`. |
 | "A's income is 25% more than B's, B's is 20% less than C's. A vs C?" | Chain: A = 1.25B, B = 0.8C → A = 1.25 × 0.8 × C = C. A and C equal. |
+| Nested fraction + win/lose target ("played `a/b` of total, won p% of played, max % of remainder losable and still win q% of all") | Let total = `x`. Played = `(a/b)x`, won so far = `p% × (a/b)x`. Target wins = `q% × x`. Remaining games = `x − (a/b)x`. Max losable = remaining − (target − already won). Convert to % of remainder. Pick LCM base (e.g., x = b × 10) to kill fractions. |
+| Investor/weighted-avg return across fractional splits ("r₁% on `1/a`, r₂% on `1/b`, r₃% on remainder") | Total return = `r₁ × (1/a) + r₂ × (1/b) + r₃ × (1 − 1/a − 1/b)`, all as fractions of capital. Answer is this × 100%. Works for any weighted-average-over-parts. |
+| Machine/asset depreciation both directions | Value after n yrs: `P × (1 − r/100)ⁿ`. Value n yrs ago: `P / (1 − r/100)ⁿ` = `P × (100/(100−r))ⁿ`. Mirror of population pattern. |
+| "Reduction of r% lets buyer get k units more for ₹M" (find original rate) | Original rate = `(r × M) / (100 × k × (1 − r/100))` = `(r × M) / ((100 − r) × k)`. Or: let original qty = q, new qty = q + k; `M/(old rate) = q`, `M/(new rate) = q+k`, solve. |
+| "x% of A = y% of B" (find ratio A:B) | `A/B = y/x`. Direct inversion — don't expand, just flip the percentages. |
+| "p% of number exceeds q% of same number by D" (find number) | `(p − q)/100 × N = D` → `N = 100D/(p − q)`. Single-unknown single-equation. |
+| Election: winner gets p% of valid votes, wins by margin M, x% votes invalid | Valid = `(1 − x/100) × total`. Winner − loser = `(2p − 100)% × valid = M`. Solve for total. Trap: margin is % of *valid*, not total. |
+| Exam: candidate scores s%, fails by a marks; another scores t%, passes by b marks | Pass mark = `s% × T + a = t% × T − b` → `T = (a + b)/((t − s)/100)`. Two-equation version of the pass-marks pattern. |
+| Mixture/solution: X L of a% solution, add/remove water or solute | Track *solute mass*, not %. Solute stays constant when adding water; recompute % on new volume. If removing `k L` then adding `k L` water: solute scales by `(1 − k/V)` per cycle → n cycles = `(1 − k/V)ⁿ`. |
+| Salary revision: hike of a%, then DA of b% on new salary (or on basic) | Read carefully: "DA on revised" = chain `×(1+a/100)×(1+b/100)`. "DA on basic" = `×(1+a/100+b/100)` (additive, same base). The preposition decides. |
+| Two candidates split votes: A gets p%, B gets rest, A wins by D votes | A − B = `(p − (100−p))% × total = (2p−100)% × total = D`. Total = `100D/(2p−100)`. |
+| "After spending p% on X, q% of remainder on Y, r% of new remainder on Z, left with ₹L" | Chain multipliers on what's *left*: `L = Income × (1−p/100)(1−q/100)(1−r/100)`. Solve for Income. Never add p+q+r. |
+| "A's salary is p% of B's; B's is q% of C's; if A = ₹X, find C" (chain of "of") | A = `(p/100)(q/100) × C` → `C = X × 10000/(pq)`. Different from "more/less than" — "of" means direct multiplication, no +1. |
+| Two numbers each changed; find % change in their product | `%Δ(P×Q) = %ΔP + %ΔQ + (%ΔP × %ΔQ)/100` (Formula 9 applied to product). Used for area (length×breadth), expenditure (price×qty), revenue, etc. |
+| Rectangle/area: length ↑ a%, breadth ↓ b% — % change in area | Same as above: `a − b − ab/100`. If both up/down, signs match. |
+| "If numerator ↑ a%, denominator ↑ b%, % change in fraction" | `(1+a/100)/(1+b/100) − 1`, times 100. Don't subtract a − b. |
 
 ## DI Integration Checklist
 
