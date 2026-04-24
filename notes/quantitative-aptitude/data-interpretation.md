@@ -442,3 +442,43 @@ Work these in under 45 seconds each. If over, diagnose which step (read / extrac
 - If cross-chart questions are consistently wrong, label both charts before reading questions — literally write on the margin.
 - Any DI question > 90 seconds signals arithmetic-speed bottleneck — fix via Simplification warmup.
 - If you miss Data Sufficiency, you're probably computing the answer instead of checking sufficiency. Reset: "Can I, in principle, compute the answer from this statement alone?" is the only question.
+
+## Topic Dependency Chain
+
+```text
+          ┌───────────────┐
+          │  Basic Math   │
+          │ (Tables, %)   │
+          └──────┬────────┘
+                 ↓
+        ┌────────────────────┐
+        │    Percentage      │
+        └────────┬───────────┘
+                 ↓
+        ┌────────────────────┐
+        │ Ratio & Proportion │
+        └────────┬───────────┘
+                 ↓
+        ┌────────────────────┐
+        │ Average & Weighted │
+        └────────┬───────────┘
+                 ↓
+        ┌────────────────────┐
+        │  Profit-Loss Basics│
+        └────────┬───────────┘
+                 ↓
+        ┌────────────────────┐
+        │  DI Core           │
+        │ (Table/Bar/Pie)    │
+        └────────┬───────────┘
+                 ↓
+        ┌────────────────────┐
+        │  Advanced DI       │
+        │(Caselet/Missing DI)│
+        └────────┬───────────┘
+                 ↓
+        ┌────────────────────┐
+        │ DI + Arithmetic Mix│
+        │ (T&W, T&D in DI)   │
+        └────────────────────┘
+```
