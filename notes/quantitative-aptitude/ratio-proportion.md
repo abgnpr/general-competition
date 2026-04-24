@@ -101,7 +101,7 @@ Use these when the question gives a ratio equation and asks for a rearranged rat
 | # | Formula | When |
 |---|---------|------|
 | **19** | **Total $T$ split as $a:b:c$ → shares are $\dfrac{a}{a+b+c}T, \dfrac{b}{a+b+c}T, \dfrac{c}{a+b+c}T$** | Every "divide ₹X in ratio..." problem |
-| 20 | Difference between two shares $= \dfrac{|a-b|}{a+b+c} T$ | "A got ₹Y more than B" |
+| 20 | Difference between two shares $= \dfrac{\lvert a-b\rvert}{a+b+c} T$ | "A got ₹Y more than B" |
 | 21 | Given one share $= S_a$, find total: $T = \dfrac{a+b+c}{a} S_a$ | Reverse — given one piece, reconstruct the whole |
 
 ### F. Inverse ratio
