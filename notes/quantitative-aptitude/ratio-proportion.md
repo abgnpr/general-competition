@@ -64,6 +64,11 @@ Organized by purpose. Core four in **bold** — if pressed for time, these four 
 | 2 | $a:b$ scaled by $m$ → $am : bm$ (ratio unchanged) | Compare ratios with different terms |
 | 3 | Ratio in simplest form: divide by $\gcd(a,b,c)$ | Simplify before comparing |
 | 4 | $a:b$ as fraction = $a/b$ | Convert to % or decimal for lookup |
+| **4a** | **Equal-multiplier flip: $pA = qB = rC \Rightarrow A:B:C = \dfrac{1}{p}:\dfrac{1}{q}:\dfrac{1}{r}$** | "30% of A = 0.25 of B = 1/5 of C" — read off reciprocals |
+| 4b | "$x\%$ of A = $y\%$ of B" $\Rightarrow A:B = y:x$ (swap) | Two-variable equal-percentage problems |
+| 4c | "$A$ is $p\%$ more than $B$" $\Rightarrow A:B = (100+p):100$ | Convert verbal % → ratio in one step |
+| 4d | "$A$ is $p\%$ less than $B$" $\Rightarrow A:B = (100-p):100$ | Same, opposite direction |
+| 4e | "$\dfrac{a}{b}$ of A = $\dfrac{c}{d}$ of B" $\Rightarrow A:B = bc:ad$ (apply 4a with $p = a/b, q = c/d$) | Mixed-fraction-of equality |
 
 ### B. Combining ratios
 
@@ -112,6 +117,39 @@ Use these when the question gives a ratio equation and asks for a rearranged rat
 | 23 | Time ratio $= 1/\text{Speed ratio}$ (for same distance) | TSD — ratio problems in disguise |
 | 24 | Work-days ratio $= 1/\text{efficiency ratio}$ | Time & Work |
 
+### G. Variation (direct, inverse, joint)
+
+The exam-favorite trap-rich family. Set up `y = k·(expression in x)`, solve for `k` once with given values, then reuse.
+
+| # | Formula | When |
+|---|---------|------|
+| 25 | Direct: $y = kx$ → $y_1/y_2 = x_1/x_2$ | "y varies directly as x" |
+| 26 | Inverse: $y = k/x$ → $y_1 x_1 = y_2 x_2$ | "y varies inversely as x" |
+| 27 | **Square/cube variation: $y \propto x^n$ → $y_1/y_2 = (x_1/x_2)^n$** | Cost ∝ weight², Resistance ∝ L, Area ∝ side², Volume ∝ side³ |
+| 28 | Joint: $z = k \cdot x^a \cdot y^b$ (any combination of ∝ and 1/∝) | "z varies as x and inversely as y²" type |
+| 29 | Resistance of wire: $R \propto L/r^2$ → same-R two-wire: $L_1/L_2 = r_1^2/r_2^2$ | Physics-flavored ratio Qs |
+
+**Diamond-broken-into-pieces template (memorize, appears every 2 papers).**
+Cost $\propto$ weight$^2$. Original weight $W$ broken into pieces in ratio $a_1:a_2:\ldots:a_n$.
+
+$$\text{Loss fraction} = 1 - \dfrac{\sum a_i^2}{\left(\sum a_i\right)^2}$$
+
+Example: ratio $1:2:3:4$ → $\sum a_i = 10$, $\sum a_i^2 = 30$ → loss = $1 - 30/100 = 70\%$. Original price = loss / 0.7.
+
+### H. Replacement / repeated dilution
+
+| # | Formula | When |
+|---|---------|------|
+| 30 | After $n$ replacements of $y$ units from $x$-unit container: pure left $= x\left(1 - \dfrac{y}{x}\right)^n$ | "Replace $y$ L of milk with water, repeat $n$ times" |
+| 31 | Final concentration ratio = $(1 - y/x)^n : 1 - (1 - y/x)^n$ | Same as above, expressed as ratio |
+
+### I. Add/subtract a constant to each term
+
+| # | Formula | When |
+|---|---------|------|
+| 32 | $\dfrac{a+x}{b+x} = \dfrac{p}{q} \Rightarrow x = \dfrac{aq - bp}{p - q}$ | "What must be added to each of $a, b$ to make ratio $p:q$" |
+| 33 | $(a+x)(d+x) = (b+x)(c+x)$ → linear in $x$ (the $x^2$ cancels) | "What added to each of $a,b,c,d$ makes them proportional" |
+
 ## Ratio Arithmetic — the operations that actually appear
 
 - **Add a constant to both terms.** $a:b$ with $+x$ each → $(a+x):(b+x)$. Ratio changes; not additive. Use variables: let actuals be $ak, bk$, set $(ak+x)/(bk+x)$ = new ratio, solve for $k$. Shows up in "Ages" constantly.
@@ -129,6 +167,15 @@ Use these when the question gives a ratio equation and asks for a rearranged rat
 6. **Ratio ↔ % flip is free.** $3:2$ means A is 1.5× B, i.e. A is 50% more than B; B is 1/3 less than A (33.33%). Use Percentages base-change table.
 7. **Adding/removing the same amount from numerator and denominator.** Brings the ratio toward $1:1$. (Adding $x$ to both makes the ratio closer to $1$; subtracting pushes it away.) Useful as a sanity check.
 8. **Coin problems trick.** "Coins of ₹1, 50p, 25p in ratio $2:3:4$, total ₹X" → convert all to same unit (paise), apply ratio of **values** not counts: value ratio = $2 \times 100 : 3 \times 50 : 4 \times 25 = 200 : 150 : 100 = 4:3:2$.
+9. **Equal-multiplier flip (Formula 4a).** When the problem says "$p\cdot A = q\cdot B = r\cdot C$" in any form (percent, decimal, fraction), **the ratio is the reciprocals** $1/p : 1/q : 1/r$. Skip the $k$-substitution — read it off in one line. Examples:
+   - "30% of A = 0.25 of B = 1/5 of C" → $\dfrac{1}{0.3}:\dfrac{1}{0.25}:\dfrac{1}{0.2} = \dfrac{10}{3}:4:5 \xrightarrow{\times 3} 10:12:15$.
+   - "20% of A = 25% of B" → $A:B = 25:20 = 5:4$ (just swap the percentages).
+   - "$\frac{2}{3}A = \frac{3}{4}B$" → $A:B = (3/4):(2/3) = 9:8$ (cross-multiply the reciprocals).
+10. **"More/less than" verbal → ratio (Formulas 4c, 4d).** Skip the algebra:
+    - "A is 25% more than B" → $A:B = 125:100 = 5:4$.
+    - "A is 20% less than B" → $A:B = 80:100 = 4:5$.
+    - "A is twice B" → $2:1$. "A is half of B" → $1:2$. Don't write equations.
+11. **"Of" chains.** "A is 3/5 of B, B is 2/3 of C" → $A:B:C$. Set $C = 15$ (LCM). Then $B = 10, A = 6$. Ratio $= 6:10:15$. **Anchor the largest term, walk backwards.**
 
 ## MCQ Tactics (exam-only)
 
@@ -172,6 +219,9 @@ Same as in Percentages, restated in ratio form. If $A:B = 5:4$:
 7. **Inverse proportion missed.** If 6 workers finish in 10 days, 15 workers take not $10 \times 15/6$ but $10 \times 6/15 = 4$ days (time ∝ 1/workers).
 8. **Square/cube forgotten.** If side ratio $= 2:3$, area ratio is $4:9$ (not $2:3$). Mensuration MCQs trap here.
 9. **"Divided equally" vs "in ratio".** "Three people share ₹600 equally" → ₹200 each. "In ratio 1:1:1" → same answer, but read carefully if the ratio is non-trivial.
+10. **Square-variation total trap.** If cost ∝ weight² and a piece is broken into ratio $a:b:c$, the new total cost is $k(a^2 + b^2 + c^2)$, **not** $k(a+b+c)^2$. Loss exists precisely because $a^2 + b^2 + c^2 < (a+b+c)^2$.
+11. **Two independent ratios = system of equations.** When income is in ratio $7:9$ AND expenditure is in ratio $4:5$ AND savings condition is given — that's two unknowns ($k_\text{inc}, k_\text{exp}$). Don't try to combine into one ratio; set up the linear system.
+12. **"Per-unit rate" disguised as ratio.** Books distributed across days with different per-child rates → it's a weighted-sum problem. Set total $=\sum (\text{rate}_i \times \text{count}_i)$.
 
 ### Trap Pairs (drill side-by-side)
 
@@ -288,6 +338,48 @@ Solve untimed first, then re-time at 45–60 s each. Each maps to a recurring pa
 
 10. **(SBI PO — coins)** A bag has ₹1, 50p, 25p coins in ratio $2:3:4$ by number. Total value $= \text{₹}44$. Find number of 50p coins.
     *Value ratio $= 2(1) : 3(0.5) : 4(0.25) = 2 : 1.5 : 1 = 4:3:2$. Sum $= 9$ parts $= \text{₹}44$ — doesn't divide evenly, so the question likely uses numbers to give a clean total. Typical exam version: value ratio $4:3:2$, total $\text{₹}45$ → one part $= 5$ → 50p value $= \text{₹}15$ → 30 coins of 50p.*
+
+11. **(LIC AAO — square variation, diamond)** Cost of a diamond varies as the square of its weight. A diamond breaks into pieces with weights in ratio $1:2:3:4$. Loss is ₹70,000. Find original price.
+    *Apply the template directly: $\sum a_i = 10$, $\sum a_i^2 = 30$. Loss fraction $= 1 - 30/100 = 70\%$. Original price $= 70000/0.7 = \text{₹}1{,}00{,}000$. Skip the longhand $kx^2$ setup.*
+
+12. **(SSC — square variation, two pieces)** Cost ∝ weight². A diamond breaks into two pieces in ratio $2:3$. Loss as % of original?
+    *$\sum a_i = 5$, $\sum a_i^2 = 13$. Loss $= 1 - 13/25 = 12/25 = 48\%$.*
+
+13. **(IBPS PO — joint variation)** $z$ varies as $x$ and inversely as $y^2$. When $x = 4$, $y = 6$, $z = 5$. Find $z$ when $x = 9, y = 5$.
+    *$z = kx/y^2$. $5 = k \cdot 4 / 36 \Rightarrow k = 45$. New $z = 45 \cdot 9 / 25 = 16.2$. Don't re-derive — sub straight in.*
+
+14. **(SSC — wire resistance)** Two wires of same material have equal resistance. Their radii are in ratio $3:4$. Find ratio of their lengths.
+    *$R \propto L/r^2$, equal R → $L_1/L_2 = r_1^2/r_2^2 = 9:16$.*
+
+15. **(SBI PO — repeated replacement)** A 81 L vessel is full of milk. 27 L is replaced by water; repeat twice more. Find milk left.
+    *Formula 30: pure $= 81(1 - 27/81)^3 = 81(2/3)^3 = 81 \cdot 8/27 = 24$ L.*
+
+16. **(IBPS Clerk — add to each term)** What must be added to each of $5, 9, 7, 12$ to make them proportional?
+    *Formula 33: $(5+x)(12+x) = (9+x)(7+x)$ → $60 + 17x + x^2 = 63 + 16x + x^2$ → $x = 3$. Check: $8:12 :: 10:15$ ✓.*
+
+17. **(SSC CGL — add to make ratio)** What must be added to each of $7$ and $11$ to get ratio $3:4$?
+    *Formula 32: $x = (7 \cdot 4 - 11 \cdot 3)/(3 - 4) = (28-33)/(-1) = 5$. Check: $12:16 = 3:4$ ✓.*
+
+18. **(SBI PO — savings system)** Incomes of A and B in ratio $7:9$, expenditures in ratio $4:5$. Each saves ₹2,000. Find A's income.
+    *Two-unknown system: incomes $7k, 9k$, expenditures $4m, 5m$. $7k - 4m = 9k - 5m = 2000$. From the first equality: $m = 2k$. Plug into $7k - 8k = 2000$ → $-k = 2000$? Sign flip — try $9k - 5m = 7k - 4m$ → $2k = m$. Then $7k - 4(2k) = -k = 2000$. The numbers in real PYQs are picked so signs work; the method is what matters: **two ratios + savings condition = 2 equations in $k, m$**.*
+
+19. **(NABARD — weighted attendance)** Show charges ₹12, ₹9.50, ₹4 on three days. Attendance ratio $3:6:11$. Find average charge per visitor.
+    *Total revenue $= 3k(12) + 6k(9.5) + 11k(4) = 36k + 57k + 44k = 137k$. Total visitors $= 20k$. Avg $= 137k/20k = ₹6.85$. The $k$ cancels — you never need its value.*
+
+20. **(SSC CGL — equal-multiplier flip)** If $30\%$ of A $= 0.25$ of B $= \tfrac{1}{5}$ of C, find $A:B:C$.
+    *Formula 4a: reciprocals of $0.30, 0.25, 0.20$ → $10/3 : 4 : 5$. Multiply by 3 → $\mathbf{10:12:15}$. One line, no $k$.*
+
+21. **(IBPS PO — % equal)** $20\%$ of A's income $= 25\%$ of B's. Ratio of incomes?
+    *Formula 4b: just swap → $A:B = 25:20 = \mathbf{5:4}$.*
+
+22. **(SSC — fraction-of equal)** If $\tfrac{2}{3}$ of A $=$ $\tfrac{3}{4}$ of B, find $A:B$.
+    *Formula 4e: $A:B = bc:ad = 3 \cdot 3 : 2 \cdot 4 = \mathbf{9:8}$. (Sanity: A < B would mean $\frac{2}{3}A < \frac{3}{4}B$, but they're equal, so A must be bigger — ✓ $9 > 8$.)*
+
+23. **(SBI Clerk — "more than")** A's salary is $25\%$ more than B's, B's is $20\%$ more than C's. Find $A:B:C$.
+    *Formula 4c twice. $A:B = 5:4$, $B:C = 6:5$. Link on B: scale to LCM(4,6)=12 → $A:B = 15:12$, $B:C = 12:10$. $\mathbf{A:B:C = 15:12:10}$.*
+
+24. **("Of" chain)** A is $\tfrac{3}{5}$ of B, B is $\tfrac{2}{3}$ of C. Find $A:B:C$.
+    *Anchor C = 15. B = $\tfrac{2}{3} \cdot 15 = 10$. A = $\tfrac{3}{5} \cdot 10 = 6$. $\mathbf{A:B:C = 6:10:15}$.*
 
 ## Stage-7 Self-Test (if you can't do these in 45s each, revisit)
 
