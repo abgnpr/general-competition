@@ -125,9 +125,9 @@ The exam-favorite trap-rich family. Set up `y = k·(expression in x)`, solve for
 |---|---------|------|
 | 25 | Direct: $y = kx$ → $y_1/y_2 = x_1/x_2$ | "y varies directly as x" |
 | 26 | Inverse: $y = k/x$ → $y_1 x_1 = y_2 x_2$ | "y varies inversely as x" |
-| 27 | **Square/cube variation: $y \propto x^n$ → $y_1/y_2 = (x_1/x_2)^n$** | Cost ∝ weight², Resistance ∝ L, Area ∝ side², Volume ∝ side³ |
+| 27 | **Square/cube variation: $y \propto x^n$ → $y_1/y_2 = (x_1/x_2)^n$** | Cost ∝ weight², Area ∝ side², Volume ∝ side³ |
 | 28 | Joint: $z = k \cdot x^a \cdot y^b$ (any combination of ∝ and 1/∝) | "z varies as x and inversely as y²" type |
-| 29 | Resistance of wire: $R \propto L/r^2$ → same-R two-wire: $L_1/L_2 = r_1^2/r_2^2$ | Physics-flavored ratio Qs |
+| 29 | Resistance of wire: $R \propto L/r^2$ → same-R two-wire: $L_1/L_2 = r_1^2/r_2^2$ | Physics-flavored ratio Qs (note: $R$ is **linear** in $L$, **inverse-square** in $r$) |
 
 **Diamond-broken-into-pieces template (memorize, appears every 2 papers).**
 Cost $\propto$ weight$^2$. Original weight $W$ broken into pieces in ratio $a_1:a_2:\ldots:a_n$.
@@ -141,7 +141,7 @@ Example: ratio $1:2:3:4$ → $\sum a_i = 10$, $\sum a_i^2 = 30$ → loss = $1 - 
 | # | Formula | When |
 |---|---------|------|
 | 30 | After $n$ replacements of $y$ units from $x$-unit container: pure left $= x\left(1 - \dfrac{y}{x}\right)^n$ | "Replace $y$ L of milk with water, repeat $n$ times" |
-| 31 | Final concentration ratio = $(1 - y/x)^n : 1 - (1 - y/x)^n$ | Same as above, expressed as ratio |
+| 31 | Pure : impure ratio after $n$ replacements $= \left(1 - \dfrac{y}{x}\right)^n \;:\; \left[1 - \left(1 - \dfrac{y}{x}\right)^n\right]$ | Same as above, expressed as ratio |
 
 ### I. Add/subtract a constant to each term
 
@@ -159,23 +159,91 @@ Example: ratio $1:2:3:4$ → $\sum a_i = 10$, $\sum a_i^2 = 30$ → loss = $1 - 
 
 ## High-Yield Shortcuts
 
-1. **"Divide ₹N in ratio $a:b:c$"**: total parts = $a+b+c$. One part $= N/(a+b+c)$. All three shares drop out by multiplication. Never set up equations.
-2. **Difference-given trick.** "A got ₹600 more than B, ratio 5:3" → difference is $5-3=2$ parts $= 600$ → one part $= 300$ → A = 1500, B = 900, total = 2400. **Identify which quantity the given number maps to, then solve one part.**
-3. **Linking ratios fast.** $A:B = 2:3$, $B:C = 4:5$. B must match → scale first by 4 → $8:12$, scale second by 3 → $12:15$. Result: $8:12:15$. Always rescale on the shared term.
-4. **"$a:b :: c:d$ → find $d$"**: $d = bc/a$. Don't set up cross-multiplication longhand.
-5. **Squares/cubes of ratios.** If side ratio is $2:3$, area ratio is $4:9$, volume ratio is $8:27$. Mensuration MCQs live on this.
-6. **Ratio ↔ % flip is free.** $3:2$ means A is 1.5× B, i.e. A is 50% more than B; B is 1/3 less than A (33.33%). Use Percentages base-change table.
-7. **Adding/removing the same amount from numerator and denominator.** Brings the ratio toward $1:1$. (Adding $x$ to both makes the ratio closer to $1$; subtracting pushes it away.) Useful as a sanity check.
-8. **Coin problems trick.** "Coins of ₹1, 50p, 25p in ratio $2:3:4$, total ₹X" → convert all to same unit (paise), apply ratio of **values** not counts: value ratio = $2 \times 100 : 3 \times 50 : 4 \times 25 = 200 : 150 : 100 = 4:3:2$.
-9. **Equal-multiplier flip (Formula 4a).** When the problem says "$p\cdot A = q\cdot B = r\cdot C$" in any form (percent, decimal, fraction), **the ratio is the reciprocals** $1/p : 1/q : 1/r$. Skip the $k$-substitution — read it off in one line. Examples:
-   - "30% of A = 0.25 of B = 1/5 of C" → $\dfrac{1}{0.3}:\dfrac{1}{0.25}:\dfrac{1}{0.2} = \dfrac{10}{3}:4:5 \xrightarrow{\times 3} 10:12:15$.
-   - "20% of A = 25% of B" → $A:B = 25:20 = 5:4$ (just swap the percentages).
-   - "$\frac{2}{3}A = \frac{3}{4}B$" → $A:B = (3/4):(2/3) = 9:8$ (cross-multiply the reciprocals).
-10. **"More/less than" verbal → ratio (Formulas 4c, 4d).** Skip the algebra:
-    - "A is 25% more than B" → $A:B = 125:100 = 5:4$.
-    - "A is 20% less than B" → $A:B = 80:100 = 4:5$.
-    - "A is twice B" → $2:1$. "A is half of B" → $1:2$. Don't write equations.
-11. **"Of" chains.** "A is 3/5 of B, B is 2/3 of C" → $A:B:C$. Set $C = 15$ (LCM). Then $B = 10, A = 6$. Ratio $= 6:10:15$. **Anchor the largest term, walk backwards.**
+### 1. "Divide ₹N in ratio $a:b:c$"
+
+Total parts $= a+b+c$. One part $= N/(a+b+c)$. All shares drop out by multiplication.
+
+> Never set up equations for a plain share-division question.
+
+### 2. Difference-given trick
+
+"A got ₹600 more than B, ratio $5:3$." Difference in parts $= 5-3 = 2$. So $2$ parts $= 600$ → one part $= 300$ → A $= 1500$, B $= 900$, total $= 2400$.
+
+> Identify which quantity the given number maps to, then solve one part.
+
+### 3. Linking ratios fast
+
+$A:B = 2:3$, $B:C = 4:5$. B must match → scale first by 4 → $8:12$. Scale second by 3 → $12:15$. Result: $8:12:15$.
+
+> Always rescale on the shared term.
+
+### 4. Fourth proportional in one step
+
+"$a:b :: c:d$ → find $d$" → $d = bc/a$.
+
+> Don't set up cross-multiplication longhand.
+
+### 5. Squares/cubes of ratios
+
+If side ratio is $2:3$:
+- area ratio $= 4:9$
+- volume ratio $= 8:27$
+
+> Mensuration MCQs live on this.
+
+### 6. Ratio ↔ % flip is free
+
+$3:2$ means A is $1.5\times$ B → A is 50% more than B; B is 1/3 less than A (33.33%).
+
+> Use the Percentages base-change table when in doubt.
+
+### 7. Adding/removing the same amount from both terms
+
+**Sanity-check rule.** Adding the same $x$ to both terms of $a:b$ pulls the ratio toward $1:1$ (from whichever side it started). Subtracting pushes it away from $1:1$.
+
+- $2:8 \xrightarrow{+2} 4:10 \xrightarrow{+8} 12:18$ — each step closer to $1:1$.
+- $8:2 \xrightarrow{+2} 10:4$ — also closer to $1:1$ (from above).
+
+> If a problem claims a ratio moved *away* from $1:1$ after adding to both terms, it's mis-stated. Reject without algebra.
+
+**Solution rule (the high-frequency direction).** When the question gives "$x$ added to both terms of $a:b$ gives new ratio $p:q$, find $x$" — apply Formula 32 directly:
+
+$$x = \dfrac{aq - bp}{p - q}$$
+
+- "What is added to both terms of $7:11$ to get $3:4$?" → $x = (7 \cdot 4 - 11 \cdot 3)/(3 - 4) = -5/-1 = 5$. Check: $12:16 = 3:4$ ✓.
+- This is the actual exam pattern. The sanity rule above just tells you whether $x$ should come out positive or negative.
+
+### 8. Coin problems trick
+
+"Coins of ₹1, 50p, 25p in ratio $2:3:4$, total ₹X." Convert all to same unit (paise), then apply ratio of **values**, not counts:
+
+$$\text{value ratio} = 2 \times 100 : 3 \times 50 : 4 \times 25 = 200 : 150 : 100 = 4:3:2.$$
+
+### 9. Equal-multiplier flip (Formula 4a)
+
+When the problem says "$p\cdot A = q\cdot B = r\cdot C$" in any form (percent, decimal, fraction), **the ratio is the reciprocals** $1/p : 1/q : 1/r$. Skip the $k$-substitution — read it off in one line.
+
+- "30% of A $=$ 0.25 of B $=$ 1/5 of C" → $\dfrac{1}{0.3}:\dfrac{1}{0.25}:\dfrac{1}{0.2} = \dfrac{10}{3}:4:5 \xrightarrow{\times 3} 10:12:15$.
+- "20% of A $=$ 25% of B" → $A:B = 25:20 = 5:4$ (just swap the percentages).
+- "$\tfrac{2}{3}A = \tfrac{3}{4}B$" → $A:B = (3/4):(2/3) = 9:8$ (cross-multiply the reciprocals).
+
+### 10. "More/less than" verbal → ratio (Formulas 4c, 4d)
+
+Skip the algebra:
+
+- "A is 25% more than B" → $A:B = 125:100 = 5:4$.
+- "A is 20% less than B" → $A:B = 80:100 = 4:5$.
+- "A is twice B" → $2:1$. "A is half of B" → $1:2$.
+
+> Don't write equations for these.
+
+### 11. "Of" chains
+
+"A is $\tfrac{3}{5}$ of B, B is $\tfrac{2}{3}$ of C" → find $A:B:C$.
+
+Set $C = 15$ (LCM of denominators). Then $B = 10$, $A = 6$. Ratio $= 6:10:15$.
+
+> Anchor the largest term, walk backwards.
 
 ## MCQ Tactics (exam-only)
 
@@ -219,7 +287,7 @@ Same as in Percentages, restated in ratio form. If $A:B = 5:4$:
 7. **Inverse proportion missed.** If 6 workers finish in 10 days, 15 workers take not $10 \times 15/6$ but $10 \times 6/15 = 4$ days (time ∝ 1/workers).
 8. **Square/cube forgotten.** If side ratio $= 2:3$, area ratio is $4:9$ (not $2:3$). Mensuration MCQs trap here.
 9. **"Divided equally" vs "in ratio".** "Three people share ₹600 equally" → ₹200 each. "In ratio 1:1:1" → same answer, but read carefully if the ratio is non-trivial.
-10. **Square-variation total trap.** If cost ∝ weight² and a piece is broken into ratio $a:b:c$, the new total cost is $k(a^2 + b^2 + c^2)$, **not** $k(a+b+c)^2$. Loss exists precisely because $a^2 + b^2 + c^2 < (a+b+c)^2$.
+10. **Square-variation total trap.** If cost ∝ weight² and a piece is broken into ratio $a:b:c$, the new total cost is $k(a^2 + b^2 + c^2)$, **not** $k(a+b+c)^2$. The lost value is the cross-terms $2ab + 2ac + 2bc$ — they exist in the whole, vanish when split. That's literally where the loss comes from.
 11. **Two independent ratios = system of equations.** When income is in ratio $7:9$ AND expenditure is in ratio $4:5$ AND savings condition is given — that's two unknowns ($k_\text{inc}, k_\text{exp}$). Don't try to combine into one ratio; set up the linear system.
 12. **"Per-unit rate" disguised as ratio.** Books distributed across days with different per-child rates → it's a weighted-sum problem. Set total $=\sum (\text{rate}_i \times \text{count}_i)$.
 
@@ -360,8 +428,9 @@ Solve untimed first, then re-time at 45–60 s each. Each maps to a recurring pa
 17. **(SSC CGL — add to make ratio)** What must be added to each of $7$ and $11$ to get ratio $3:4$?
     *Formula 32: $x = (7 \cdot 4 - 11 \cdot 3)/(3 - 4) = (28-33)/(-1) = 5$. Check: $12:16 = 3:4$ ✓.*
 
-18. **(SBI PO — savings system)** Incomes of A and B in ratio $7:9$, expenditures in ratio $4:5$. Each saves ₹2,000. Find A's income.
-    *Two-unknown system: incomes $7k, 9k$, expenditures $4m, 5m$. $7k - 4m = 9k - 5m = 2000$. From the first equality: $m = 2k$. Plug into $7k - 8k = 2000$ → $-k = 2000$? Sign flip — try $9k - 5m = 7k - 4m$ → $2k = m$. Then $7k - 4(2k) = -k = 2000$. The numbers in real PYQs are picked so signs work; the method is what matters: **two ratios + savings condition = 2 equations in $k, m$**.*
+18. **(SBI PO — savings system)** Incomes of A and B in ratio $4:5$, expenditures in ratio $7:9$. If each saves ₹50, find A's income.
+    *Two-unknown system: incomes $4k, 5k$, expenditures $7m, 9m$. Savings equations: $4k - 7m = 50$ and $5k - 9m = 50$. Subtract: $k - 2m = 0 \Rightarrow k = 2m$. Plug back: $8m - 7m = m = 50$, so $k = 100$. A's income $= 4k = \mathbf{₹400}$.*
+    *Pattern to lock in: two ratios + one absolute condition (savings each, or savings difference) = 2 linear equations in $k, m$. Always set up cleanly — don't try to merge into a single ratio.*
 
 19. **(NABARD — weighted attendance)** Show charges ₹12, ₹9.50, ₹4 on three days. Attendance ratio $3:6:11$. Find average charge per visitor.
     *Total revenue $= 3k(12) + 6k(9.5) + 11k(4) = 36k + 57k + 44k = 137k$. Total visitors $= 20k$. Avg $= 137k/20k = ₹6.85$. The $k$ cancels — you never need its value.*
@@ -373,7 +442,7 @@ Solve untimed first, then re-time at 45–60 s each. Each maps to a recurring pa
     *Formula 4b: just swap → $A:B = 25:20 = \mathbf{5:4}$.*
 
 22. **(SSC — fraction-of equal)** If $\tfrac{2}{3}$ of A $=$ $\tfrac{3}{4}$ of B, find $A:B$.
-    *Formula 4e: $A:B = bc:ad = 3 \cdot 3 : 2 \cdot 4 = \mathbf{9:8}$. (Sanity: A < B would mean $\frac{2}{3}A < \frac{3}{4}B$, but they're equal, so A must be bigger — ✓ $9 > 8$.)*
+    *Formula 4e: $A:B = bc:ad = 3 \cdot 3 : 2 \cdot 4 = \mathbf{9:8}$. (Sanity: A's multiplier $\tfrac{2}{3}$ is smaller than B's $\tfrac{3}{4}$, so A must be the bigger number to keep the products equal — ✓ $9 > 8$.)*
 
 23. **(SBI Clerk — "more than")** A's salary is $25\%$ more than B's, B's is $20\%$ more than C's. Find $A:B:C$.
     *Formula 4c twice. $A:B = 5:4$, $B:C = 6:5$. Link on B: scale to LCM(4,6)=12 → $A:B = 15:12$, $B:C = 12:10$. $\mathbf{A:B:C = 15:12:10}$.*
@@ -391,7 +460,7 @@ Solve untimed first, then re-time at 45–60 s each. Each maps to a recurring pa
 6. Fourth proportional to 3, 5, 9? *(15)*
 7. If side ratio of two squares is $3:5$, area ratio? *(9:25)*
 8. $a:b = 2:3$. $(3a+2b):(2a-b) = ?$ *(plug $a=2, b=3$: $(6+6):(4-3) = 12:1$)*
-9. If $x:y = 3:4$, $(x+y)/(x-y) = ?$ *($7/-1 = -7$, or $|7/1| = 7$ if absolute)*
+9. If $x:y = 3:4$, $(x+y)/(x-y) = ?$ *(set $x=3, y=4$: $(3+4)/(3-4) = 7/-1 = -7$)*
 10. 20 L of milk-water $1:1$. Add 5 L water. New ratio? *(milk 10, water 15 → 2:3)*
 
 If you can explain **why** each answer is right without the formula sheet, Ratio & Proportion is done.
